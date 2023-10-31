@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fovorites",
+  "info": {
+    "singularName": "fovorite",
+    "pluralName": "fovorites",
+    "displayName": "fovorites",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "character": {
+      "type": "json"
+    }
+  }
+}
